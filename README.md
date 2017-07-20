@@ -17,7 +17,11 @@ Autocomplete and lint from a GraphQL endpoint or static JSON introspection query
 ```json
 {
   "request": {
-    "url": "http://localhost:3000/graphql"
+    "url": "http://localhost:3000/graphql/",
+    "encode": true,
+    "headers": {
+      "Content-Type": "application/x-www-form-urlencoded; charset=utf-8"
+    }
   }
 }
 ```
